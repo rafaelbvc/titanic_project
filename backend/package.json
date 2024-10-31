@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "B.0.1",
+  "description": "Titanic Project - Backend",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelbvc/titanic_project.git"
+  },
+  "keywords": [
+    "Backend",
+    "Titanic",
+    "Project",
+    "Demonstration"
+  ],
+  "author": "Rafael Vendramini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelbvc/titanic_project/issues"
+  },
+  "homepage": "https://github.com/rafaelbvc/titanic_project#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
