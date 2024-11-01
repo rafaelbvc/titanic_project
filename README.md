@@ -102,16 +102,16 @@ API endpoint to retrieve detailed data by PassengerID
 Error handling for invalid or non-existent PassengerID
 Roadmap for Project Titanic
 
-\*\*TODO List
+## Roadmap
 
-## Phase 1 (MVP)
+### Phase 1 (MVP)
 
 []-Develop Passenger List View with basic information display.
 []-Implement search functionality for passenger names.
 []-Set up API endpoints for listing passengers.
 []-Ensure basic data storage and retrieval functionality with MongoDB/PostgreSQL.
 
-## Phase 2 (Next Release - NR)
+### Phase 2 (Next Release - NR)
 
 []-Add pagination and filter options to the Passenger List.
 []-Implement Survival Analysis by Attributes (Front and Back-End).
@@ -119,13 +119,15 @@ Roadmap for Project Titanic
 []-Develop the filter and search functionality with advanced criteria.
 []-Start Dashboard Development for aggregated insights.
 
-## Phase 3 (Enhanced Features and Admin Control)
+### Phase 3 (Enhanced Features and Admin Control)
 
 []-Build the Data Dashboard for insights and trends.
 []-Implement Admin Functionality for passenger data management.
 []-Add role-based access control for data management.
 []-Optimize database queries and add pre-aggregated data for speed.
 []-Improve user interface and error handling across all pages.
+
+## Todo List
 
 \*\*Back-End
 
@@ -144,7 +146,9 @@ Roadmap for Project Titanic
 []-Start Survival Analysis charts with placeholders for NR phase.
 []-Design and build Dashboard components.
 []-Implement Admin pages for managing passenger records (NR).
-[]-Testing & Documentation
+
+\*\* Testing & Documentation
+
 []-Write unit and integration tests for front-end and back-end.
 []-Document API endpoints and usage for developers.
 []-Ensure responsiveness for mobile devices across all components.

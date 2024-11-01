@@ -89,14 +89,14 @@ Technologies: React, TypeScript
 Dedicated page or modal with fields PassengerID, Survival (Survived), Class (Pclass), Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, and Embarked
 "Back to List" option and error handling for missing data
 
-\*\*TODO List
+## Roadmap
 
-## Phase 1 (MVP)
+### Phase 1 (MVP)
 
 []-Develop Passenger List View with basic information display.
 []-Implement search functionality for passenger names.
 
-## Phase 2 (Next Release - NR)
+### Phase 2 (Next Release - NR)
 
 []-Add pagination and filter options to the Passenger List.
 []-Implement Survival Analysis by Attributes (Front and Back-End).
@@ -104,12 +104,14 @@ Dedicated page or modal with fields PassengerID, Survival (Survived), Class (Pcl
 []-Develop the filter and search functionality with advanced criteria.
 []-Start Dashboard Development for aggregated insights.
 
-## Phase 3 (Enhanced Features and Admin Control)
+### Phase 3 (Enhanced Features and Admin Control)
 
 []-Build the Data Dashboard for insights and trends.
 []-Implement Admin Functionality for passenger data management.
 []-Add role-based access control for data management.
 []-Improve user interface and error handling across all pages.
+
+## Todo List
 
 \*\*Front-End
 
@@ -119,9 +121,5 @@ Dedicated page or modal with fields PassengerID, Survival (Survived), Class (Pcl
 []-Start Survival Analysis charts with placeholders for NR phase.
 []-Design and build Dashboard components.
 []-Implement Admin pages for managing passenger records (NR).
-[]-Testing & Documentation
-[]-Write unit and integration tests for front-end and back-end.
-[]-Document API endpoints and usage for developers.
-[]-Ensure responsiveness for mobile devices across all components.
 
 ## ~Enjoy
