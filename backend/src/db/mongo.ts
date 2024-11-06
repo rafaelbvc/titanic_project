@@ -8,7 +8,7 @@ const dbConnection =  async() => {
 
     try {
         // await mongoose.connect()
-        // await mongoose.connect(uri)
+        await mongoose.connect(uri)
         console.log("Mongo is connected")
 
     } catch (error: any) {
