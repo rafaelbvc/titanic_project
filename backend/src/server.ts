@@ -2,6 +2,7 @@ import express from "express"
 import dotenv from "dotenv"
 import cors from "cors"
 import dbConnection from "./db/mongo"
+import routes from "./routes/Router"
 
 dotenv.config()
 
@@ -15,6 +16,8 @@ dbConnection()
 server.use(cors({origin: "*"}))
 
 server.use(express.json())
+
+server.use(routes)
 
 
 server.listen(port, () => 
