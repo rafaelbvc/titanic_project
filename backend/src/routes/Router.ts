@@ -6,7 +6,9 @@ const routes = Router()
 
 routes.get("/passenger", getAll)
 
-routes.post("/new/passenger", createPassenger)
+// routes.get("/passenger/:ids",)
+
+routes.post("/passenger/new", createPassenger)
 
 routes.put("/passenger/update/:ids", replacePassenger)
 

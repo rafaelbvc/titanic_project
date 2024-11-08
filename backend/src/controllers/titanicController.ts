@@ -9,7 +9,8 @@ export const getAll = async (request: Request, response: Response) => {
         response.status(404).json({ message: "No data!" })
     }
 
-    response.send(passengerData).status(201).json({ message: "Success" })
+    // response.send(passengerData).status(201).json({ message: "Success" })
+    response.status(201).json({ passengerData })
 }
 
 export const createPassenger = async (request: Request, response: Response) => {
@@ -28,23 +29,26 @@ export const createPassenger = async (request: Request, response: Response) => {
 
 export const replacePassenger = async (request: Request, response: Response) => {
 
-    const id = request.params.ids
+    const {id} = request.params
 
     
+    console.log(id, "idsdsdsd")
+    
 
-    const passengerID = await TitanicSchema.findOne({ids: id})
+    const passengerID = await TitanicSchema.findOne({ ids: id})
+    // const passengerID = await TitanicSchema.findOne({ids: "h240Ghhf8"})
+
+    console.log(passengerID)
 
     const { ids, passenger, survived, pClass, name, sex, age, sibSp, parch, ticket, fare, cabin, embarked } = request.body
 
     if (!passengerID) {
         response.status(404).json({ message: "No passenger!" })
+        return
     }
 
 
-
-
-
-     const putPassenger = await TitanicSchema.updateOne({
+     await TitanicSchema.updateOne({
          ids,
          passenger,
          survived, 
@@ -61,9 +65,8 @@ export const replacePassenger = async (request: Request, response: Response) => 
      })
 
 
-     if(passengerID) {
-        response.status(201).json(putPassenger)
-     }
+    response.status(201).json({message: "Passenger updated!"})
+
 
 
 }
