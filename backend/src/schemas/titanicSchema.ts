@@ -17,38 +17,32 @@ const titanicSchema = new mongoose.Schema( {
     },
     survived: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     pClass: {
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     name: {
         type: String,
-        required: true,
-        unique: false
+        required: true
     },
     sex: {
         type: String,
-        required: true,
-        unique: false
+        required: true
     },
     age: {
         type: Number,
-        required: true,
-        unique: false
+        required: true
     },
     sibSp: {
         type: Number,
-        required: false,
-        unique: false
+        required: false
     },
     parch: {
         type: Number,
-        required: false,
-        unique: false
+        required: false
     },
     ticket: {
         type: Number,
@@ -57,18 +51,16 @@ const titanicSchema = new mongoose.Schema( {
     },
     fare: {
         type: String,
-        required: false,
-        unique: false
+        required: false
     },
     cabin: {
         type: Number,
-        required: false,
-        unique: false
+        required: false
     },
     embarked: {
         type: Number,
-        required: false,
-        unique: false
+        required: false
+
     }
  },    {
      timestamps: true
