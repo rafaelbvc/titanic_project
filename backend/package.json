@@ -1,11 +1,11 @@
 {
   "name": "backend",
-  "version": "v.B-0.2",
+  "version": "v.B-1.8",
   "description": "Titanic Project - Backend",
   "main": "./src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev ./src/server.ts && nodemon"
+    "dev": "ts-node-dev ./src/server.ts"
   },
   "keywords": [
     "Titanic",
@@ -28,7 +28,6 @@
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.1",
-    "nodemon": "^3.1.4",
     "ts-node-dev": "^2.0.0"
   }
 }

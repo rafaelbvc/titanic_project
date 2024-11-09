@@ -6,7 +6,9 @@ import routes from "./routes/Router"
 
 dotenv.config()
 
-const server = express()
+const server = express() as any
+
+// const server = express()
 
 const port = process.env.PORT
 
@@ -23,3 +25,12 @@ server.use(routes)
 server.listen(port, () => 
     console.log(`Server is running on : http://localhost:${port} `)
 )
+
+// process.on("SIGINT",()=> {
+//     console.log("SIGINT");
+//     server.close(()=>{
+//         console.log("Server Closed")
+//         process.exit(0)
+//     })
+// })
+
